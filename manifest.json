@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sözleşme Risk Merceği",
+  "description": "Kullanım koşulları, gizlilik politikası ve abonelik şartlarını alıntıya dayalı bir risk raporuna dönüştürür. Hukuki tavsiye vermez.",
+  "version": "0.1.0",
+  "minimum_chrome_version": "116",
+  "permissions": ["activeTab", "scripting", "storage", "sidePanel"],
+  "host_permissions": ["https://api.anthropic.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Sözleşme Risk Merceği" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "options_page": "options.html",
+  "content_scripts": [
+    { "matches": ["http://*/*", "https://*/*"], "js": ["detect.js"], "run_at": "document_idle" }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src https://api.anthropic.com"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "tos-risk-lens",
+  "version": "1.0.0",
+  "description": "ToS/gizlilik politikası risk analizi yapan Chrome uzantısı",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "eval": "node eval/run-eval.mjs",
+    "eval:llm": "node eval/run-eval.mjs --mode=llm",
+    "demo:serve": "node demo/serve.mjs",
+    "demo:record": "node demo/record-replay.mjs",
+    "demo:video": "node demo/record-video.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@page-agent/page-controller": "^1.12.4"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^30.1.2"
+  }
+}

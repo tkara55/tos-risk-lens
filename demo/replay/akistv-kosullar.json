@@ -1,0 +1,27 @@
+{
+  "origin": "handwritten",
+  "note": "El yazımı model yanıtı (API anahtarı olmadan demo için). Gerçek kayıt için: npm run demo:record. s13 kimliği bilerek yanlış verildi: doğrulayıcı alıntıyı s14'te bulup düzeltir.",
+  "model": "claude-opus-5-5",
+  "delayMs": 900,
+  "responses": [
+    {
+      "document_type": "terms_of_service",
+      "findings": [
+        { "category": "auto_renewal", "severity": "medium", "segment_id": "s4", "quote": "Aboneliğiniz, siz iptal edene kadar her ay otomatik olarak yenilenir ve kayıtlı ödeme yönteminizden her fatura döneminin başında abonelik ücreti tahsil edilir.", "explanation_tr": "Siz iptal etmedikçe her ay kartınızdan otomatik ödeme alınır; deneme süresi bitince de ücretli plana kendiliğinden geçersiniz.", "confidence": "high" },
+        { "category": "price_change", "severity": "medium", "segment_id": "s5", "quote": "AkışTV abonelik ücretlerini dilediği zaman değiştirme hakkını saklı tutar.", "explanation_tr": "Şirket fiyatı istediği zaman artırabilir; kullanmaya devam ederseniz yeni fiyatı kabul etmiş sayılırsınız.", "confidence": "high" },
+        { "category": "cancellation_refund", "severity": "high", "segment_id": "s7", "quote": "Aboneliğinizi yalnızca müşteri hizmetlerini telefonla arayarak iptal edebilirsiniz. Yapılan ödemeler iade edilmez", "explanation_tr": "İptal için internetten bir düğme yok, telefonla aramanız gerekiyor; ödediğiniz para, kullanmadığınız günler için bile geri verilmiyor.", "confidence": "high" },
+        { "category": "account_termination", "severity": "high", "segment_id": "s9", "quote": "AkışTV, herhangi bir gerekçe göstermeksizin ve önceden bildirimde bulunmaksızın hesabınızı askıya alabilir veya tamamen kapatabilir.", "explanation_tr": "Şirket hesabınızı sebep söylemeden ve haber vermeden kapatabilir; kalan süre için para iadesi de yapılmaz.", "confidence": "high" },
+        { "category": "content_license", "severity": "medium", "segment_id": "s11", "quote": "dünya çapında, süresiz, geri alınamaz, alt lisanslanabilir ve bedelsiz bir kullanım lisansı vermiş olursunuz", "explanation_tr": "Yorumlarınızı ve fotoğraflarınızı şirket süresiz olarak ve size para ödemeden reklamlarında kullanabilir; bu izni geri alamazsınız.", "confidence": "high" },
+        { "category": "ai_training", "severity": "high", "segment_id": "s12", "quote": "öneri sistemlerimizi ve yapay zekâ modellerimizi eğitmek ve geliştirmek amacıyla kullanılabilir", "explanation_tr": "İzleme geçmişiniz, yorumlarınız ve sesli arama kayıtlarınız yapay zekâ modellerini eğitmek için kullanılabilir.", "confidence": "high" },
+        { "category": "data_sharing", "severity": "high", "segment_id": "s13", "quote": "reklam ortaklarımız ve iş ortaklarımız dahil üçüncü kişilerle paylaşılabilir", "explanation_tr": "Ne izlediğinize dair bilgiler reklam şirketleri dahil başka şirketlerle paylaşılabilir.", "confidence": "high" },
+        { "category": "liability_limitation", "severity": "medium", "segment_id": "s16", "quote": "hizmetin kullanımından doğabilecek doğrudan veya dolaylı hiçbir zarardan sorumlu tutulamaz", "explanation_tr": "Hizmet yüzünden bir zarar görürseniz şirket sorumluluk kabul etmiyor; en fazla son ayın ücreti kadar sorumluluk üstleniyor.", "confidence": "high" },
+        { "category": "unilateral_changes", "severity": "medium", "segment_id": "s18", "quote": "Değişiklikler sitede yayımlandığı anda yürürlüğe girer; hizmeti kullanmaya devam etmeniz güncel koşulları kabul ettiğiniz anlamına gelir.", "explanation_tr": "Koşullar size haber verilmeden değişebilir ve hizmeti kullanmaya devam etmeniz yeni koşulları kabul ettiğiniz anlamına gelir.", "confidence": "high" },
+        { "category": "dispute_rights", "severity": "high", "segment_id": "s20", "quote": "İstanbul Tahkim Merkezi kurallarına göre tek hakemli tahkim yoluyla çözülür; Kullanıcı toplu davaya katılmaktan feragat eder.", "explanation_tr": "Anlaşmazlıklar mahkeme yerine hakem önünde çözülür ve başka kullanıcılarla birlikte toplu dava açma hakkınızdan vazgeçmiş olursunuz.", "confidence": "medium" }
+      ],
+      "not_assessable": [
+        "8. maddedeki \"Kullanıcı aleyhine dava açma hakkı saklı kalmak kaydıyla\" ifadesi, tahkim şartının iki taraf için de geçerli olup olmadığını belirsiz bırakıyor."
+      ],
+      "page_instructions_observed": false
+    }
+  ]
+}

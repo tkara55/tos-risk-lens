@@ -1,0 +1,49 @@
+{
+  "fetched_at": "2026-10-14",
+  "note": "Metinlerin kendisi telif nedeniyle repoya konmaz; eval/fetch.mjs bunları eval/cache/ altına indirir. Altın etiketler (eval/gold) yalnızca kısa çapa ifadeleri içerir.",
+  "documents": [
+    {
+      "id": "netflix",
+      "name": "Netflix Terms of Use",
+      "lang": "en",
+      "url": "https://help.netflix.com/legal/termsofuse"
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox Terms of Service",
+      "lang": "en",
+      "url": "https://www.dropbox.com/terms"
+    },
+    {
+      "id": "github",
+      "name": "GitHub Terms of Service",
+      "lang": "en",
+      "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify Terms of Use",
+      "lang": "en",
+      "url": "https://www.spotify.com/us/legal/end-user-agreement/"
+    },
+    {
+      "id": "discord",
+      "name": "Discord Terms of Service",
+      "lang": "en",
+      "url": "https://discord.com/terms"
+    },
+    {
+      "id": "yemeksepeti",
+      "name": "Yemeksepeti Kullanım Koşulları",
+      "lang": "tr",
+      "url": "https://www.yemeksepeti.com/contents/terms-and-conditions.htm"
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom Terms of Service",
+      "lang": "en",
+      "url": "https://www.zoom.com/en/trust/terms/",
+      "held_out": true
+    }
+  ]
+}

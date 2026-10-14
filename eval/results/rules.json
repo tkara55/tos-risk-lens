@@ -1,0 +1,1469 @@
+{
+ "mode": "rules",
+ "model": null,
+ "all": {
+  "gold": 70,
+  "tp": 65,
+  "preds": 286,
+  "fp": 115,
+  "confusions": 29,
+  "rejected": 0,
+  "recall": 0.9285714285714286,
+  "precision": 0.4965034965034965
+ },
+ "dev": {
+  "gold": 59,
+  "tp": 56,
+  "preds": 234,
+  "fp": 89,
+  "confusions": 20,
+  "rejected": 0,
+  "recall": 0.9491525423728814,
+  "precision": 0.5341880341880342
+ },
+ "held_out": {
+  "gold": 11,
+  "tp": 9,
+  "preds": 52,
+  "fp": 26,
+  "confusions": 9,
+  "rejected": 0,
+  "recall": 0.8181818181818182,
+  "precision": 0.3269230769230769
+ },
+ "perDoc": [
+  {
+   "doc": "netflix",
+   "held_out": false,
+   "gold": 9,
+   "tp": 8,
+   "recall": 0.8888888888888888,
+   "preds": 15,
+   "precision": 0.6,
+   "missed": [
+    {
+     "id": "N6",
+     "category": "unilateral_changes",
+     "anchor": "We may, from time to time, change these Terms of Use"
+    }
+   ],
+   "fp": [
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s9",
+     "quote": "While we strive to provide a consistent and high-quality experience, some content or features may be tempor…"
+    },
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s20",
+     "quote": "(ix) engage in any of the foregoing in connection with the use, creation, development, modification, prompt…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s24",
+     "quote": "We may suspend or terminate access to any Interactive Feature immediately if you breach these Terms of Use,…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s27",
+     "quote": "If a payment is not successfully settled, due to expiration, insufficient funds, or otherwise, and you do n…"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "auto_renewal",
+     "severity": "medium",
+     "segment_id": "s31",
+     "quote": "If you signed up for Netflix using your account with a third party as a Payment Method and wish to cancel y…",
+     "gold": "N2:cancellation_refund"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s45",
+     "quote": "If you do not wish to accept the changes, you can terminate your account before they take effect.",
+     "gold": "N6:unilateral_changes"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 91,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 1,
+     "tp": 1
+    },
+    "cancellation_refund": {
+     "gold": 1,
+     "tp": 1
+    },
+    "price_change": {
+     "gold": 1,
+     "tp": 1
+    },
+    "unilateral_changes": {
+     "gold": 1,
+     "tp": 0
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 1,
+     "tp": 1
+    },
+    "ai_training": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_sharing": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_collection": {
+     "gold": 0,
+     "tp": 0
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 0,
+     "tp": 0
+    },
+    "dispute_rights": {
+     "gold": 1,
+     "tp": 1
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  },
+  {
+   "doc": "dropbox",
+   "held_out": false,
+   "gold": 10,
+   "tp": 9,
+   "recall": 0.9,
+   "preds": 32,
+   "precision": 0.625,
+   "missed": [
+    {
+     "id": "D1",
+     "category": "content_license",
+     "anchor": "this permission extends to our affiliates and trusted third parties"
+    }
+   ],
+   "fp": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s78",
+     "quote": "Opt out of Agreement to Arbitrate."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s79",
+     "quote": "Arbitration Procedures."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s80",
+     "quote": "Arbitration Fees and Incentives."
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s28",
+     "quote": "The disclaimers of warranties and limitations of liability below do not apply to consumers in North Carolin…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s40",
+     "quote": "We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s45",
+     "quote": "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account f…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s49",
+     "quote": "They may also be able to restrict or terminate your access to a Dropbox Team account."
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s55",
+     "quote": "If after such notice you fail to take the steps we ask of you, we’ll terminate or suspend your access to th…"
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s66",
+     "quote": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO—THIS INCLUDES ANY LIABILI…"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s75",
+     "quote": "You and Dropbox agree that any judicial proceeding to resolve claims relating to these Terms or the Service…",
+     "gold": "D8:jurisdiction"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s81",
+     "quote": "Exceptions to Agreement to Arbitrate.",
+     "gold": "D8:jurisdiction"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s51",
+     "quote": "You’re free to stop using our Services at any time.",
+     "gold": "D5:account_termination"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 95,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 1,
+     "tp": 1
+    },
+    "cancellation_refund": {
+     "gold": 1,
+     "tp": 1
+    },
+    "price_change": {
+     "gold": 1,
+     "tp": 1
+    },
+    "unilateral_changes": {
+     "gold": 2,
+     "tp": 2
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 1,
+     "tp": 0
+    },
+    "ai_training": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_sharing": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_collection": {
+     "gold": 0,
+     "tp": 0
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 0,
+     "tp": 0
+    },
+    "dispute_rights": {
+     "gold": 1,
+     "tp": 1
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  },
+  {
+   "doc": "github",
+   "held_out": false,
+   "gold": 10,
+   "tp": 10,
+   "recall": 1,
+   "preds": 40,
+   "precision": 0.6,
+   "missed": [],
+   "fp": [
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s15",
+     "quote": "AI Features, Training, and Your Data"
+    },
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s47",
+     "quote": "AI Features, Training, and Your Data"
+    },
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s136",
+     "quote": "By using automated means to access, collect, or otherwise use (“Access”) any publicly accessible Content fr…"
+    },
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s182",
+     "quote": "Output may contain material that resembles code or content in the model's training data or that is subject …"
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s20",
+     "quote": "Disclaimer of Warranties"
+    },
+    {
+     "category": "indemnification",
+     "severity": "medium",
+     "segment_id": "s22",
+     "quote": "Release and Indemnification"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s54",
+     "quote": "You may cancel this agreement and close your Account at any time."
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s57",
+     "quote": "Disclaimer of Warranties"
+    },
+    {
+     "category": "indemnification",
+     "severity": "medium",
+     "segment_id": "s61",
+     "quote": "Release and Indemnification"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s114",
+     "quote": "We have the right to remove content or close Accounts if we need to."
+    },
+    {
+     "category": "content_license",
+     "severity": "medium",
+     "segment_id": "s126",
+     "quote": "By making a repository public, you grant other Users a nonexclusive, worldwide license to use, display, per…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s222",
+     "quote": "Short version: You may close your Account at any time."
+    },
+    {
+     "category": "price_change",
+     "severity": "medium",
+     "segment_id": "s250",
+     "quote": "any modification, price change, suspension or discontinuance of the Service;"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "data_sharing",
+     "severity": "medium",
+     "segment_id": "s185",
+     "quote": "This license does not, however, permit GitHub or its Affiliates to share your Inputs or Outputs with third-…",
+     "gold": "G2:ai_training"
+    },
+    {
+     "category": "price_change",
+     "severity": "medium",
+     "segment_id": "s263",
+     "quote": "We will notify our Users of material changes to this Agreement, such as price increases, at least 30 days p…",
+     "gold": "G9:unilateral_changes"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s264",
+     "quote": "We reserve the right at any time and from time to time to modify or discontinue, temporarily or permanently…",
+     "gold": "G9:unilateral_changes"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 97,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 0,
+     "tp": 0
+    },
+    "cancellation_refund": {
+     "gold": 1,
+     "tp": 1
+    },
+    "price_change": {
+     "gold": 0,
+     "tp": 0
+    },
+    "unilateral_changes": {
+     "gold": 1,
+     "tp": 1
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 2,
+     "tp": 2
+    },
+    "ai_training": {
+     "gold": 2,
+     "tp": 2
+    },
+    "data_sharing": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_collection": {
+     "gold": 0,
+     "tp": 0
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 1,
+     "tp": 1
+    },
+    "dispute_rights": {
+     "gold": 0,
+     "tp": 0
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  },
+  {
+   "doc": "spotify",
+   "held_out": false,
+   "gold": 11,
+   "tp": 10,
+   "recall": 0.9090909090909091,
+   "preds": 50,
+   "precision": 0.4,
+   "missed": [
+    {
+     "id": "S10",
+     "category": "unilateral_changes",
+     "anchor": "We may make changes to these Terms"
+    }
+   ],
+   "fp": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s136",
+     "quote": "A party who intends to seek arbitration must first send a written notice of the Dispute (\"Notice\") to the o…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s137",
+     "quote": "During the Informal Settlement Conference, you and a Spotify representative must both personally participat…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s138",
+     "quote": "If any aspect of this \"Pre-arbitration notice of dispute and informal resolution period\" section has not be…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s140",
+     "quote": "Neither you nor Spotify may commence an arbitration proceeding until after the Tolling Period has ended."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s142",
+     "quote": "Either you or Spotify may start arbitration proceedings."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s143",
+     "quote": "If NAM is unavailable, unwilling, or otherwise unable to administer an arbitration in accordance with this …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s144",
+     "quote": "Each party retains the right to request a hearing in arbitration from the arbitrator."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s145",
+     "quote": "As in court, any counsel participating in an arbitration certifies that they are complying with the require…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s146",
+     "quote": "Spotify will pay all filing, administration, case-management, hearing, and arbitrator fees (\"Arbitration Fe…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s147",
+     "quote": "Regardless of the manner in which the arbitration is conducted, the arbitrator shall issue a reasoned writt…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s149",
+     "quote": "If you elect to have your claim addressed as part of a mass arbitration (defined below), you agree to the a…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s151",
+     "quote": "These mass filing procedures are intended to facilitate the efficient and orderly resolution and settlement…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s152",
+     "quote": "If these mass filing procedures apply to your case, the Tolling Period for your claims will be extended unt…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s153",
+     "quote": "First Stage: In the first stage, counsel for the parties shall each select twenty-five (25) cases per side …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s156",
+     "quote": "Option One: You and Spotify, separately or by agreement, may opt out of arbitration and elect to have your …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s158",
+     "quote": "Assuming the number of remaining cases exceeds two hundred (200), then two hundred (200) cases shall be ran…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s159",
+     "quote": "Throughout the staged process above, the arbitrators for the cases are encouraged to resolve the cases with…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s160",
+     "quote": "A court of competent jurisdiction will have the authority to enforce this \"Mass arbitration\" section and, i…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s162",
+     "quote": "If in the process of arbitrating or litigating a Dispute this Arbitration Agreement is invalidated in whole…"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s17",
+     "quote": "Please refer to Section 7 below for information about those additional terms and how we may change these Te…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s85",
+     "quote": "Spotify reserves the right to remove or disable access to any User Content for any or no reason."
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s170",
+     "quote": "Unless as otherwise stated in these Terms, should any provision of these Terms be held invalid or unenforce…"
+    },
+    {
+     "category": "data_collection",
+     "severity": "low",
+     "segment_id": "s96",
+     "quote": "Some Content licensed by, provided to, created by, or otherwise made available by Spotify (e.g., podcasts o…"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s117",
+     "quote": "TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (B…",
+     "gold": "S8:liability_limitation"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s124",
+     "quote": "Further, to the fullest extent permitted by applicable law, you and Spotify agree to the exclusive jurisdic…",
+     "gold": "S11:jurisdiction"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s132",
+     "quote": "You and Spotify both agree that any Dispute relating to any actual or alleged infringement of your or Spoti…",
+     "gold": "S11:jurisdiction"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s59",
+     "quote": "Price changes will take effect at the start of the next subscription period following the date of the price…",
+     "gold": "S4:price_change"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s108",
+     "quote": "Spotify may terminate these Terms (including any additional terms and conditions incorporated herein) or su…",
+     "gold": "S7:account_termination"
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s108",
+     "quote": "If you or Spotify terminate these Terms, or if Spotify suspends your access to the Spotify Service, you agr…",
+     "gold": "S7:account_termination"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s166",
+     "quote": "Premium Subscribers who do not wish to continue using the Spotify Service under the updated Terms must clos…",
+     "gold": "S1:dispute_rights"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 99,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 1,
+     "tp": 1
+    },
+    "cancellation_refund": {
+     "gold": 1,
+     "tp": 1
+    },
+    "price_change": {
+     "gold": 1,
+     "tp": 1
+    },
+    "unilateral_changes": {
+     "gold": 1,
+     "tp": 0
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 1,
+     "tp": 1
+    },
+    "ai_training": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_sharing": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_collection": {
+     "gold": 1,
+     "tp": 1
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 1,
+     "tp": 1
+    },
+    "dispute_rights": {
+     "gold": 1,
+     "tp": 1
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  },
+  {
+   "doc": "discord",
+   "held_out": false,
+   "gold": 8,
+   "tp": 8,
+   "recall": 1,
+   "preds": 57,
+   "precision": 0.2982456140350877,
+   "missed": [],
+   "fp": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s122",
+     "quote": "IT AFFECTS YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE OR PARTICIPATE IN A LAWSUIT IN COURT AND LIMITIN…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s124",
+     "quote": "If you have an issue with the services or Discord, you agree that you will reach out to us and use good fai…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s126",
+     "quote": "The Parties further agree that whether a complaining Party has satisfied the requirements of this Informal …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s128",
+     "quote": "Governing Law, Jurisdiction, Class Action Waiver and Time Limitation."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s136",
+     "quote": "Agreement to Arbitrate."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s137",
+     "quote": "The “Agreement to Arbitrate” includes all provisions following this heading, through and including the para…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s139",
+     "quote": "You and Discord (collectively the “Parties”) agree that this Agreement to Arbitrate is made pursuant to a t…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s140",
+     "quote": "This Agreement to Arbitrate is intended to be interpreted broadly, and it applies to all Disputes between t…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s143",
+     "quote": "‍Arbitration Rules."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s144",
+     "quote": "Except as modified by this Agreement to Arbitrate, NAM will administer any arbitration in accordance with t…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s145",
+     "quote": "Except as modified by this Agreement to Arbitrate, ADR Services will administer any arbitration in accordan…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s146",
+     "quote": "If the amount in controversy does not exceed $10,000, and you do not seek injunctive or declaratory relief,…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s147",
+     "quote": "‍Arbitration Costs."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s148",
+     "quote": "The Parties agree that the arbitration provider has discretion to modify the amount or timing of any admini…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s149",
+     "quote": "At least 14 days before the date set for an arbitration hearing, any Party may serve an offer in writing up…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s150",
+     "quote": "Arbitration Decision."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s151",
+     "quote": "Except as explicitly set forth in this Agreement to Arbitrate, the arbitrator, and not any federal, state o…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s152",
+     "quote": "Arbitration Location."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s154",
+     "quote": "For arbitrations before NAM (or any substitute provider for NAM that is agreed upon by the Parties or appoi…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s155",
+     "quote": "You agree to cooperate in good faith with Discord, the arbitrator, and the arbitration provider to implemen…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s156",
+     "quote": "For arbitrations before NAM, the results of the first completely adjudicated batch of demands will be given…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s157",
+     "quote": "Arbitration Proceedings at ADR Services."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s158",
+     "quote": "You can decline this Agreement to Arbitrate–and no other provision of these terms–by emailing an opt-out no…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s159",
+     "quote": "The small claims court, and not any arbitrator or arbitration provider, shall have the exclusive authority …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s161",
+     "quote": "If the paragraph titled “Class Arbitration and Collective Relief Waiver,” the paragraph titled “Mass Filing…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s177",
+     "quote": "Any dispute resolution provisions, including the arbitration agreement, such as those under the “Settling d…"
+    },
+    {
+     "category": "data_sharing",
+     "severity": "medium",
+     "segment_id": "s73",
+     "quote": "You agree that we may disclose your content to third parties outside of the services when we believe we’re …"
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s78",
+     "quote": "You agree we will not be liable for any harm caused by that content."
+    },
+    {
+     "category": "content_license",
+     "severity": "medium",
+     "segment_id": "s81",
+     "quote": "So long as you comply with these terms, we grant you a worldwide, non-exclusive, personal, non-transferable…"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s98",
+     "quote": "You’re free to stop using Discord’s services at any time and for any reason."
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s98",
+     "quote": "You’re free to stop using Discord’s services at any time and for any reason."
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s115",
+     "quote": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO."
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s154",
+     "quote": "For arbitrations before NAM (or any substitute provider for NAM that is agreed upon by the Parties or appoi…"
+    },
+    {
+     "category": "indemnification",
+     "severity": "medium",
+     "segment_id": "s174",
+     "quote": "Any indemnification obligations (as applicable) such as those listed under the “Indemnity” section;"
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s175",
+     "quote": "Any disclaimer of warranties such as those under the “Services ‘AS IS’” section;"
+    },
+    {
+     "category": "jurisdiction",
+     "severity": "low",
+     "segment_id": "s152",
+     "quote": "For any arbitration conducted, the Parties agree to submit to the personal jurisdiction of any federal or s…"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s130",
+     "quote": "These terms and all Disputes between you and Discord, whether in arbitration or court (if a Dispute is non-…",
+     "gold": "DC7:jurisdiction"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s131",
+     "quote": "By agreeing to these terms, you and Discord agree that to the extent any Dispute is not arbitrable—includin…",
+     "gold": "DC7:jurisdiction"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s163",
+     "quote": "Changes to this Agreement to Arbitrate: Discord will provide 30 days’ notice of the date of any material ch…",
+     "gold": "DC6:unilateral_changes"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s133",
+     "quote": "You agree that any Dispute between you and Discord that for any reason is not subject to the “Agreement to …",
+     "gold": "DC1:dispute_rights"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 99,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 0,
+     "tp": 0
+    },
+    "cancellation_refund": {
+     "gold": 0,
+     "tp": 0
+    },
+    "price_change": {
+     "gold": 0,
+     "tp": 0
+    },
+    "unilateral_changes": {
+     "gold": 1,
+     "tp": 1
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 1,
+     "tp": 1
+    },
+    "ai_training": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_sharing": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_collection": {
+     "gold": 1,
+     "tp": 1
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 1,
+     "tp": 1
+    },
+    "dispute_rights": {
+     "gold": 1,
+     "tp": 1
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  },
+  {
+   "doc": "yemeksepeti",
+   "held_out": false,
+   "gold": 11,
+   "tp": 11,
+   "recall": 1,
+   "preds": 40,
+   "precision": 0.875,
+   "missed": [],
+   "fp": [
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s53",
+     "quote": "Yemeksepeti üye işyerlerinin sağladığı içerikten sorumlu değildir."
+    },
+    {
+     "category": "price_change",
+     "severity": "medium",
+     "segment_id": "s54",
+     "quote": "Yemeksepeti sisteminde satışa sunulan ürünlerin fiyat ve ürün özellik bilgilerini değiştirme yükümlülüğü Ye…"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s78",
+     "quote": "Yemeksepeti’nin, tarafınıza tanımlanan Cüzdan Para(lar)’ın bir hata sebebiyle verildiği durumlar dahil olma…"
+    },
+    {
+     "category": "liability_limitation",
+     "severity": "medium",
+     "segment_id": "s141",
+     "quote": "Taraflar, öngöremedikleri ve önleyemedikleri ve Sözleşme’den doğan edimlerini direkt olarak etkileyen yangı…"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "data_sharing",
+     "severity": "medium",
+     "segment_id": "s29",
+     "quote": "Kullanıcı paylaşımlarının üçüncü kişiler tarafından izinsiz şekilde kullanılmasından, paylaşılmasından veya…",
+     "gold": "Y3:liability_limitation"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 96,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 0,
+     "tp": 0
+    },
+    "cancellation_refund": {
+     "gold": 1,
+     "tp": 1
+    },
+    "price_change": {
+     "gold": 1,
+     "tp": 1
+    },
+    "unilateral_changes": {
+     "gold": 1,
+     "tp": 1
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 1,
+     "tp": 1
+    },
+    "ai_training": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_sharing": {
+     "gold": 1,
+     "tp": 1
+    },
+    "data_collection": {
+     "gold": 1,
+     "tp": 1
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 1,
+     "tp": 1
+    },
+    "dispute_rights": {
+     "gold": 1,
+     "tp": 1
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  },
+  {
+   "doc": "zoom",
+   "held_out": true,
+   "gold": 11,
+   "tp": 9,
+   "recall": 0.8181818181818182,
+   "preds": 52,
+   "precision": 0.3269230769230769,
+   "missed": [
+    {
+     "id": "Z5",
+     "category": "unilateral_changes",
+     "anchor": "Zoom may make modifications, deletions, and additions to this Agreement"
+    },
+    {
+     "id": "Z7",
+     "category": "data_collection",
+     "anchor": "Zoom owns all rights, title, and interest in and to Service Generated Data"
+    }
+   ],
+   "fp": [
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s36",
+     "quote": "Zoom does not use any of your audio, video, chat, screen sharing, attachments or other communications-like …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s111",
+     "quote": "DISPUTE RESOLUTION, ARBITRATION AGREEMENT, AND CLASS ACTION WAIVER"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s114",
+     "quote": "27.2 Exceptions to Arbitration."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s115",
+     "quote": "We want to address any Disputes without needing arbitration."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s116",
+     "quote": "27.4 Arbitration Procedure."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s117",
+     "quote": "The applicable arbitration provider depends on where you live."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s118",
+     "quote": "Arbitration hearings will take place through videoconferencing by default, unless you and Zoom agree upon a…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s119",
+     "quote": "If a request to proceed in small claims court (see Section 27.2(1)), is made after an arbitration has been …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s122",
+     "quote": "27.7 Bellwether Arbitrations."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s123",
+     "quote": "All parties agree that arbitration demands are of a “substantially similar nature” if they arise out of or …"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s124",
+     "quote": "The parties shall work in good faith with the arbitrator to complete each Bellwether Arbitration within one…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s125",
+     "quote": "Following resolution of the Bellwether Arbitrations, the parties agree to engage in a global mediation of a…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s126",
+     "quote": "The parties agree to cooperate in good faith with the arbitration provider to implement the Bellwether Arbi…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s127",
+     "quote": "At least ten (10) calendar days before the date set for the arbitration hearing, you or Zoom may serve a wr…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s128",
+     "quote": "The parties agree that any disputes with respect to settlement offer(s) or offer(s) of judgment in a Mass F…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s129",
+     "quote": "27.9 Arbitration Costs."
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s131",
+     "quote": "You may reject this Arbitration Agreement and opt out of arbitration by sending an email to opt-out@zoom.us…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s132",
+     "quote": "Except as provided in Section 27.6 above, if any provision of this Arbitration Agreement is found to be ill…"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s156",
+     "quote": "All sections of this Agreement which, by their nature should survive termination or expiration, will surviv…"
+    },
+    {
+     "category": "ai_training",
+     "severity": "high",
+     "segment_id": "s177",
+     "quote": "Updates to Section 10 to clarify Zoom’s data usage practices, narrow the scope of Zoom’s licenses and clari…"
+    },
+    {
+     "category": "content_license",
+     "severity": "medium",
+     "segment_id": "s14",
+     "quote": "If access to or use of any portion of the Services requires or allows for you to download, use, or install …"
+    },
+    {
+     "category": "content_license",
+     "severity": "medium",
+     "segment_id": "s15",
+     "quote": "Subject to the terms and conditions in this Agreement, Zoom grants you a limited, revocable, non-exclusive,…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s30",
+     "quote": "(xiii) make, use, or offer the Services or Software for lease, rent, or sale, or reproduce, resell, distrib…"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s64",
+     "quote": "You may find information on how to terminate your account and Services located here."
+    },
+    {
+     "category": "indemnification",
+     "severity": "medium",
+     "segment_id": "s96",
+     "quote": "INDEMNIFICATION"
+    },
+    {
+     "category": "indemnification",
+     "severity": "medium",
+     "segment_id": "s156",
+     "quote": "All sections of this Agreement which, by their nature should survive termination or expiration, will surviv…"
+    }
+   ],
+   "confusions": [
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s69",
+     "quote": "Changes to this Agreement do not create a renewed opportunity to opt out of arbitration (if applicable).",
+     "gold": "Z5:unilateral_changes"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s130",
+     "quote": "The statute of limitations and any arbitration cost deadlines shall be tolled while the parties engage in t…",
+     "gold": "Z8:liability_limitation"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s139",
+     "quote": "27 Dispute Resolution, Arbitration Agreement, and Class Action Waiver;",
+     "gold": "Z4:account_termination"
+    },
+    {
+     "category": "dispute_rights",
+     "severity": "high",
+     "segment_id": "s149",
+     "quote": "The laws of the State of California, U.S.A., regardless of conflict of laws principles, govern all matters …",
+     "gold": "Z11:jurisdiction"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s7",
+     "quote": "You are entirely responsible for maintaining the security of your username and password, and you agree not …",
+     "gold": "Z8:liability_limitation"
+    },
+    {
+     "category": "unilateral_changes",
+     "severity": "medium",
+     "segment_id": "s50",
+     "quote": "Without limiting our rights in any other section of this Agreement, including 14.3, if any failure to pay C…",
+     "gold": "Z4:account_termination"
+    },
+    {
+     "category": "account_termination",
+     "severity": "medium",
+     "segment_id": "s70",
+     "quote": "You agree that Zoom may modify, delete, and make additions to its guides, statements, policies, and notices…",
+     "gold": "Z5:unilateral_changes"
+    },
+    {
+     "category": "indemnification",
+     "severity": "medium",
+     "segment_id": "s139",
+     "quote": "25 Indemnification;",
+     "gold": "Z4:account_termination"
+    },
+    {
+     "category": "jurisdiction",
+     "severity": "low",
+     "segment_id": "s121",
+     "quote": "Notwithstanding anything to the contrary in this Arbitration Agreement, if a court decides by means of a fi…",
+     "gold": "Z10:dispute_rights"
+    }
+   ],
+   "rejected": [],
+   "possible_misses": 0,
+   "status": "uncertain",
+   "score": 100,
+   "llm_errors": [],
+   "perCategory": {
+    "auto_renewal": {
+     "gold": 1,
+     "tp": 1
+    },
+    "cancellation_refund": {
+     "gold": 1,
+     "tp": 1
+    },
+    "price_change": {
+     "gold": 1,
+     "tp": 1
+    },
+    "unilateral_changes": {
+     "gold": 1,
+     "tp": 0
+    },
+    "account_termination": {
+     "gold": 1,
+     "tp": 1
+    },
+    "content_license": {
+     "gold": 1,
+     "tp": 1
+    },
+    "ai_training": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_sharing": {
+     "gold": 0,
+     "tp": 0
+    },
+    "data_collection": {
+     "gold": 1,
+     "tp": 0
+    },
+    "liability_limitation": {
+     "gold": 1,
+     "tp": 1
+    },
+    "indemnification": {
+     "gold": 1,
+     "tp": 1
+    },
+    "dispute_rights": {
+     "gold": 1,
+     "tp": 1
+    },
+    "jurisdiction": {
+     "gold": 1,
+     "tp": 1
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "origin": "handwritten",
+  "note": "El yazımı model yanıtı. Bilerek bir uydurma iddia içerir (otomatik yenileme): metinde bu cümle yok, doğrulayıcı reddeder. Gerçek kayıt için: npm run demo:record.",
+  "model": "claude-opus-5-5",
+  "delayMs": 900,
+  "responses": [
+    {
+      "document_type": "privacy_policy",
+      "findings": [
+        { "category": "data_sharing", "severity": "medium", "segment_id": "s4", "quote": "bilgileriniz grup şirketlerimiz ve seçkin çözüm ortaklarımızla Ek Hizmet Şartları'nda belirtilen amaçlarla paylaşılabilir", "explanation_tr": "Bilgileriniz başka şirketlerle paylaşılabilir; hangi amaçlarla olduğu bu sayfada değil, başka bir belgede yazıyor.", "confidence": "low" },
+        { "category": "ai_training", "severity": "medium", "segment_id": "s5", "quote": "Bu sistemlerin hangi amaçlarla geliştirildiği Ürün Geliştirme Politikası'nda açıklanmaktadır.", "explanation_tr": "Notlarınızı okuyan otomatik sistemlerin, örneğin yapay zekâ eğitimi gibi başka amaçlarla da geliştirilip geliştirilmediği açık değil.", "confidence": "low" },
+        { "category": "auto_renewal", "severity": "medium", "segment_id": "s8", "quote": "Ücretli planlar her yıl otomatik olarak yenilenir ve iptal edilmedikçe ücret tahsil edilir.", "explanation_tr": "Ücretli plan siz iptal edene kadar her yıl kendiliğinden yenilenir.", "confidence": "medium" }
+      ],
+      "not_assessable": [
+        "Faturalama, yenileme ve iptal koşulları bu sayfada değil, \"Ücretli Planlar Sözleşmesi\"nde; otomatik yenileme olup olmadığı buradan anlaşılamıyor.",
+        "Yetkili mahkeme \"Ek Hizmet Şartları\"na bırakılmış; o belge bu sayfada yok.",
+        "Verilerin yedeklerde ne kadar kalacağı (\"bir süre daha\") belirtilmemiş.",
+        "Metnin son cümlesi yarıda kesilmiş; sayfanın bir kısmı eksik olabilir."
+      ],
+      "page_instructions_observed": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sözleşme Risk Merceği</title>
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+<div class="app">
+  <header class="app-header"><h1>Sözleşme Risk Merceği</h1></header>
+  <div id="disclaimer"></div>
+  <div class="controls">
+    <button id="analyze" class="primary" type="button">Bu sayfayı analiz et</button>
+    <span id="progress" class="progress" aria-live="polite"></span>
+  </div>
+  <p id="privacy" class="privacy-note"></p>
+  <div id="error" class="error" hidden></div>
+  <div id="report"></div>
+</div>
+<script type="module" src="sidepanel.js"></script>
+</body>
+</html>

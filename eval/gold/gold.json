@@ -1,0 +1,646 @@
+{
+ "labeler": "manual (insan), 2026-10-14; kural motoru ve LLM çıktısı görülmeden etiketlendi",
+ "matching": "Tahmin, kategori (veya alt_categories) eşleşirse ve alıntısı anchor/alt_anchors içeren segmentlerden birinden geliyorsa doğru sayılır.",
+ "documents": {
+  "netflix": [
+   {
+    "id": "N1",
+    "category": "auto_renewal",
+    "severity": "medium",
+    "anchor": "Unless you cancel your subscription before your billing date, you authorize us to charge"
+   },
+   {
+    "id": "N2",
+    "category": "cancellation_refund",
+    "severity": "medium",
+    "anchor": "payments are non-refundable and we do not provide refunds"
+   },
+   {
+    "id": "N3",
+    "category": "price_change",
+    "severity": "medium",
+    "anchor": "We may change our subscription plans and the price of our service"
+   },
+   {
+    "id": "N4",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "You waive all special, indirect and consequential damages against us",
+    "alt_anchors": [
+     "we will not be held liable should such events occur"
+    ]
+   },
+   {
+    "id": "N5",
+    "category": "dispute_rights",
+    "severity": "high",
+    "anchor": "NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS"
+   },
+   {
+    "id": "N6",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "We may, from time to time, change these Terms of Use"
+   },
+   {
+    "id": "N7",
+    "category": "content_license",
+    "severity": "low",
+    "anchor": "Netflix is free to use any comments, information, ideas"
+   },
+   {
+    "id": "N8",
+    "category": "account_termination",
+    "severity": "medium",
+    "anchor": "We can terminate your account or place your account on hold",
+    "alt_anchors": [
+     "We may terminate or restrict your use of our service",
+     "we reserve the right to revoke an Offer and put your account on hold"
+    ]
+   },
+   {
+    "id": "N9",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "governed by and construed in accordance with the laws of the Netherlands"
+   }
+  ],
+  "dropbox": [
+   {
+    "id": "D1",
+    "category": "content_license",
+    "alt_categories": [
+     "data_sharing"
+    ],
+    "severity": "medium",
+    "anchor": "this permission extends to our affiliates and trusted third parties"
+   },
+   {
+    "id": "D2",
+    "category": "auto_renewal",
+    "severity": "medium",
+    "anchor": "on each periodic renewal until cancellation"
+   },
+   {
+    "id": "D3",
+    "category": "cancellation_refund",
+    "severity": "medium",
+    "anchor": "Refunds are only issued if required by law",
+    "alt_anchors": [
+     "Dropbox does not provide refunds if we suspend or terminate your access"
+    ]
+   },
+   {
+    "id": "D4",
+    "category": "price_change",
+    "severity": "medium",
+    "anchor": "We may change the fees in effect on renewal of your subscription"
+   },
+   {
+    "id": "D5",
+    "category": "account_termination",
+    "severity": "medium",
+    "anchor": "We reserve the right to suspend or terminate your access to the Services",
+    "alt_anchors": [
+     "We won’t provide notice or an opportunity to export Your Stuff",
+     "you will not be able to access or export Your Stuff",
+     "you don’t have a Paid Account and haven't accessed our Services for 12 consecutive months"
+    ]
+   },
+   {
+    "id": "D6",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD",
+    "alt_anchors": [
+     "THE SERVICES ARE PROVIDED \"AS IS.\"",
+     "WON’T BE LIABLE FOR:",
+     "ANY LOSS OF USE, DATA, BUSINESS, OR PROFITS",
+     "WILL HAVE NO LIABILITY TO YOU FOR ANY LOSS OF PROFIT",
+     "ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE"
+    ]
+   },
+   {
+    "id": "D7",
+    "category": "dispute_rights",
+    "severity": "high",
+    "anchor": "final and binding individual arbitration by a single arbitrator",
+    "alt_anchors": [
+     "NO CLASS OR REPRESENTATIVE ACTIONS",
+     "MANDATORY ARBITRATION PROVISIONS:",
+     "the remainder will remain in effect, except that if a finding of partial illegality"
+    ]
+   },
+   {
+    "id": "D8",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "federal or state courts of San Francisco County, California",
+    "alt_anchors": [
+     "These Terms will be governed by California law",
+     "exclusive jurisdiction of the state and federal courts in San Francisco County"
+    ]
+   },
+   {
+    "id": "D9",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "By continuing to use or access the Services after the updates come into effect",
+    "alt_anchors": [
+     "We may revise these Terms to better reflect",
+     "These updated terms will be effective no less than 30 days"
+    ]
+   },
+   {
+    "id": "D10",
+    "category": "unilateral_changes",
+    "severity": "low",
+    "anchor": "these free features may be withdrawn without further notice"
+   }
+  ],
+  "github": [
+   {
+    "id": "G1",
+    "category": "ai_training",
+    "severity": "high",
+    "anchor": "including by training AI Features, and for the purpose of training"
+   },
+   {
+    "id": "G2",
+    "category": "ai_training",
+    "severity": "high",
+    "anchor": "a license to collect and use your Inputs and Outputs to develop, train and improve",
+    "alt_anchors": [
+     "we may use that Input to provide, develop, train, and improve the Service",
+     "GitHub's Affiliates may use your Inputs and Outputs under this license",
+     "does not apply to the license granted in Sections D.4-D.8"
+    ]
+   },
+   {
+    "id": "G3",
+    "category": "content_license",
+    "severity": "medium",
+    "anchor": "You grant GitHub and our Affiliates the right to store, host, archive, parse"
+   },
+   {
+    "id": "G4",
+    "category": "content_license",
+    "severity": "low",
+    "anchor": "transferable, sub-licensable, irrevocable and perpetual license to implement"
+   },
+   {
+    "id": "G5",
+    "category": "cancellation_refund",
+    "severity": "medium",
+    "anchor": "There will be no refunds or credits for partial months of service",
+    "alt_anchors": [
+     "Amounts payable under this Agreement are non-refundable"
+    ]
+   },
+   {
+    "id": "G6",
+    "category": "account_termination",
+    "severity": "high",
+    "anchor": "with or without cause, with or without notice, effective immediately",
+    "alt_anchors": [
+     "we will terminate that User’s Account immediately",
+     "We will terminate the Accounts of repeat infringers"
+    ]
+   },
+   {
+    "id": "G7",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "we will not be liable to you or any third party for any loss of profits",
+    "alt_anchors": [
+     "We will not be liable for damages or losses arising from your use",
+     "“as is” and “as available,” without warranty of any kind",
+     "We provide our service as is, and we make no promises",
+     "GitHub does not warrant that the Service will meet your requirements",
+     "Our liability is limited whether or not we have been informed",
+     "GitHub cannot and will not be liable for any loss or damage from your failure",
+     "Output is provided \"as-is\""
+    ]
+   },
+   {
+    "id": "G8",
+    "category": "indemnification",
+    "severity": "medium",
+    "anchor": "You agree to indemnify us, defend us, and hold us harmless",
+    "alt_anchors": [
+     "Your indemnity obligations in Section Q apply to your use of AI Features"
+    ]
+   },
+   {
+    "id": "G9",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "We reserve the right, at our sole discretion, to amend these Terms of Service",
+    "alt_anchors": [
+     "we may modify this agreement at any time",
+     "We may modify this agreement, but we will give you 30 days' notice",
+     "to modify or discontinue, temporarily or permanently, the Website"
+    ]
+   },
+   {
+    "id": "G10",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "exclusive jurisdiction and venue of the courts located in the City and County of San Francisco"
+   }
+  ],
+  "spotify": [
+   {
+    "id": "S1",
+    "category": "dispute_rights",
+    "severity": "high",
+    "anchor": "binding individual (not class) arbitration",
+    "alt_anchors": [
+     "REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS",
+     "NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS",
+     "Neither party may participate as a plaintiff, claimant, or class member",
+     "the parties agree to waive any right to a jury trial",
+     "will be resolved through individual arbitration",
+     "all of the cases must be resolved in arbitration through staged sets of proceedings"
+    ]
+   },
+   {
+    "id": "S2",
+    "category": "auto_renewal",
+    "severity": "medium",
+    "anchor": "Paid Subscriptions continue indefinitely until cancelled"
+   },
+   {
+    "id": "S3",
+    "category": "cancellation_refund",
+    "severity": "medium",
+    "anchor": "we do not provide refunds or credits for any partial subscription periods"
+   },
+   {
+    "id": "S4",
+    "category": "price_change",
+    "severity": "medium",
+    "anchor": "by continuing to use the Spotify Service after the price change takes effect"
+   },
+   {
+    "id": "S5",
+    "category": "content_license",
+    "severity": "medium",
+    "anchor": "non-exclusive, transferable, sublicensable, royalty-free, fully paid, irrevocable, worldwide license"
+   },
+   {
+    "id": "S6",
+    "category": "data_collection",
+    "alt_categories": [
+     "data_sharing"
+    ],
+    "severity": "low",
+    "anchor": "to provide advertising and other information to you"
+   },
+   {
+    "id": "S7",
+    "category": "account_termination",
+    "severity": "medium",
+    "anchor": "suspend your access to the Spotify Service at any time if we believe",
+    "alt_anchors": [
+     "we reserve the right to terminate a Paid Subscription at any time",
+     "Spotify may reclaim, or require you to change, your username for any reason"
+    ]
+   },
+   {
+    "id": "S8",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "SOLE AND EXCLUSIVE REMEDY FOR ANY PROBLEMS OR DISSATISFACTION",
+    "alt_anchors": [
+     "PROVIDED \"AS IS\" AND \"AS AVAILABLE,\"",
+     "BE LIABLE FOR (1) ANY INDIRECT, SPECIAL, INCIDENTAL",
+     "WITHIN ONE (1) YEAR AFTER THE DATE",
+     "Spotify has no liability to you, nor any obligation to provide a refund"
+    ]
+   },
+   {
+    "id": "S9",
+    "category": "indemnification",
+    "severity": "medium",
+    "anchor": "You agree to indemnify and hold Spotify harmless"
+   },
+   {
+    "id": "S10",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "We may make changes to these Terms",
+    "alt_anchors": [
+     "Spotify reserves the right to change our Spotify Service offerings",
+     "we may modify, suspend, or stop (permanently or temporarily)"
+    ]
+   },
+   {
+    "id": "S11",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "in accordance with the laws of the state of New York",
+    "alt_anchors": [
+     "shall be brought in the federal courts of New York, New York"
+    ]
+   }
+  ],
+  "discord": [
+   {
+    "id": "DC1",
+    "category": "dispute_rights",
+    "severity": "high",
+    "anchor": "binding arbitration as the sole means to resolve Disputes",
+    "alt_anchors": [
+     "contains an arbitration clause and class-action waiver",
+     "you may not bring a claim as a plaintiff or a class member",
+     "WHICH CONTAINS MANDATORY ARBITRATION PROVISIONS",
+     "ARBITRATION MEANS THAT YOU WAIVE YOUR RIGHT TO A JURY TRIAL",
+     "NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS",
+     "shall have exclusive authority to resolve: (1) all Disputes"
+    ]
+   },
+   {
+    "id": "DC2",
+    "category": "content_license",
+    "severity": "medium",
+    "anchor": "you grant us a license to use, reproduce, distribute, create derivative works",
+    "alt_anchors": [
+     "non-exclusive, perpetual, irrevocable, transferable license to use the feedback"
+    ]
+   },
+   {
+    "id": "DC3",
+    "category": "account_termination",
+    "severity": "medium",
+    "anchor": "with or without notice, at our discretion for any reason",
+    "alt_anchors": [
+     "We also reserve the right to delete, change, or reclaim your username"
+    ]
+   },
+   {
+    "id": "DC4",
+    "category": "indemnification",
+    "severity": "medium",
+    "anchor": "You will indemnify and hold Discord"
+   },
+   {
+    "id": "DC5",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "DISCORD LIMITS OUR LIABILITY TO YOU TO THE GREATER OF",
+    "alt_anchors": [
+     "THE SERVICES ARE PROVIDED “AS IS.”",
+     "FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES",
+     "DISCORD ISN’T LIABLE FOR THE CONDUCT OR CONTENT",
+     "We are not liable for any such outages or service changes",
+     "We take no responsibility for any of your content"
+    ]
+   },
+   {
+    "id": "DC6",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "We may decide to update these terms",
+    "alt_anchors": [
+     "stop offering some services entirely",
+     "Changes will become effective on the 30th day and apply to all claims not yet filed"
+    ]
+   },
+   {
+    "id": "DC7",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "governed by the law of the United States and the laws of California",
+    "alt_anchors": [
+     "exclusive jurisdiction of the court of Amsterdam",
+     "the Dispute must be resolved exclusively by a court of competent jurisdiction"
+    ]
+   },
+   {
+    "id": "DC8",
+    "category": "data_collection",
+    "severity": "low",
+    "anchor": "we may identify active games and other applications on your device"
+   }
+  ],
+  "yemeksepeti": [
+   {
+    "id": "Y1",
+    "category": "data_sharing",
+    "severity": "medium",
+    "anchor": "iş ortakları ile üçüncü kişilerle bedelli veya bedelsiz paylaşabilir",
+    "alt_anchors": [
+     "siparişi teslim edecek üye işyeri ile paylaşmaktadır"
+    ]
+   },
+   {
+    "id": "Y2",
+    "category": "content_license",
+    "severity": "high",
+    "anchor": "tüm mali hakların Yemeksepeti’ne devredildiğini kabul etmektedir",
+    "alt_anchors": [
+     "Yemeksepeti'nden hiçbir telif ücreti talep etmeyecektir"
+    ]
+   },
+   {
+    "id": "Y3",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "uğrayabileceği zararlardan dolayı tazminat talep etmemeyi",
+    "alt_anchors": [
+     "Yemeksepeti şifre kullanımından doğacak problemlerden",
+     "her türlü problemden veya oluşabilecek zarardan kesinlikle sorumlu değildir",
+     "Yemeksepeti’nin kullanıcılarına veya üçüncü kişilere karşı hiçbir sorumluluğu olmayacaktır",
+     "Yemeksepeti'nin bu dosyalardan dolayı hiçbir şekilde sorumlu tutulamayacağını",
+     "eksik ve/veya hatalı açıklamalardan dolayı oluşacak problemlerden veya zararlardan Yemeksepeti sorumlu değildir",
+     "Yemeksepeti, Yemeksepeti Platformları’nda Cüzdan Para’dan faydalanmanızı engelleyebilecek herhangi bir durumdan sorumlu tutulamayacaktır",
+     "Yemeksepeti'nin sorumlu olmayacağını",
+     "Yemeksepeti’nin herhangi bir sorumluluğu bulunmamaktadır",
+     "Yemeksepeti sorumlu olmayacaktır",
+     "Yemeksepeti, aracı hizmet sağlayıcı olması sebebi ile üye işyerleri tarafından yapılacak ürün iadesi"
+    ]
+   },
+   {
+    "id": "Y4",
+    "category": "account_termination",
+    "severity": "medium",
+    "anchor": "kullanıcının üyeliğini kısmen veya tamamen kısıtlayabilir, engelleyebilir, askıya alabilir veya sona erdirebilir",
+    "alt_anchors": [
+     "kullanıcıyı hizmet dışına çıkarma ve üyeliğine son verme hakkına sahip olduğunu",
+     "hesabınızı kapatma, askıya alma, kısıtlama hakkı saklıdır",
+     "askıya alma veya sona erdirme hak ve yetkisine sahip olacağını",
+     "Yemeksepeti üyeliğini sona erdirme hakkının bulunduğunu",
+     "münhasıran süresiz olarak engelleyebilecektir"
+    ]
+   },
+   {
+    "id": "Y5",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "işbu Sözleşme’nin uygulamasında değişiklikler yapabilir, mevcut maddelerini değiştirebilir",
+    "alt_anchors": [
+     "herhangi bir hizmeti değiştirme ya da sona erdirme",
+     "bazı hizmetlerini kısmen veya tamamen değiştirebilir veya ücretli hale dönüştürebilir",
+     "işbu Şartları her zaman değiştirme veya güncelleme etme hakkını saklı tutar",
+     "sistemin çalışmasını geçici bir süre askıya alabilir veya tamamen durdurabilir",
+     "önceden haber vermeksizin herhangi bir kuponun kullanımını geçersiz kılma",
+     "önceden bildirimde bulunmaksızın Gel-Al seçeneğini kaldırma",
+     "dilediği zaman bu hizmeti durdurma, güncelleme ve iptal etme hakkını saklı tutar",
+     "Cüzdan Para kampanyasını herhangi bir zamanda, herhangi bir tarafa önceden bildirimde bulunmaksızın"
+    ]
+   },
+   {
+    "id": "Y6",
+    "category": "price_change",
+    "severity": "medium",
+    "anchor": "Hizmet bedelinin değişkenlik gösterebileceğini",
+    "alt_anchors": [
+     "Öncelikli Teslimat Hizmeti ücretini dilediğinde değiştirme hakkını saklı tutar"
+    ]
+   },
+   {
+    "id": "Y7",
+    "category": "cancellation_refund",
+    "severity": "medium",
+    "anchor": "ücret iadesi ancak aşağıdaki hallerde yapılabilecektir",
+    "alt_anchors": [
+     "sipariş bedeli kullanıcıya iade edilmeyecektir",
+     "ücret iadesi yapmama hakkını saklı tutar",
+     "Cüzdan Para’nız iade edilemez, nakit ile değiştirilemez"
+    ]
+   },
+   {
+    "id": "Y8",
+    "category": "indemnification",
+    "severity": "medium",
+    "anchor": "tüm maddi ve manevi zararı karşılayacağını",
+    "alt_anchors": [
+     "zararı kullanıcıya her zaman rücu etme ve uğradığı zararın tazminini isteme hakkı",
+     "Yemeksepeti’nin maruz kalabileceği tüm zararları karşılayacağını",
+     "tüm doğrudan ve dolaylı zararları ile masraflarını tazmin etmekle yükümlüdür"
+    ]
+   },
+   {
+    "id": "Y9",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "İstanbul Merkez Mahkemeleri ve İcra Müdürlükleri yetkilidir"
+   },
+   {
+    "id": "Y10",
+    "category": "data_collection",
+    "severity": "low",
+    "anchor": "çerez (cookie/tanımlama bilgileri) kullanıldığını"
+   },
+   {
+    "id": "Y11",
+    "category": "dispute_rights",
+    "severity": "medium",
+    "anchor": "bağlayıcı ve kesin delil teşkil eder"
+   }
+  ],
+  "zoom": [
+   {
+    "id": "Z1",
+    "category": "auto_renewal",
+    "severity": "medium",
+    "anchor": "each Renewal Term for the Services will begin automatically",
+    "alt_anchors": [
+     "recurring subscription Charges and automatic renewals"
+    ]
+   },
+   {
+    "id": "Z2",
+    "category": "cancellation_refund",
+    "severity": "medium",
+    "anchor": "are final and non-refundable"
+   },
+   {
+    "id": "Z3",
+    "category": "price_change",
+    "severity": "medium",
+    "anchor": "Zoom may change prices for the Services at any time, in its sole discretion"
+   },
+   {
+    "id": "Z4",
+    "category": "account_termination",
+    "severity": "medium",
+    "anchor": "Zoom may terminate this Agreement, for any reason or no reason",
+    "alt_anchors": [
+     "12.7 Termination or Suspension for Nonpayment"
+    ]
+   },
+   {
+    "id": "Z5",
+    "category": "unilateral_changes",
+    "severity": "medium",
+    "anchor": "Zoom may make modifications, deletions, and additions to this Agreement",
+    "alt_anchors": [
+     "Zoom may modify, delete, and make additions to its guides",
+     "Zoom may, at any time, in its sole discretion, modify the Services or Software"
+    ]
+   },
+   {
+    "id": "Z6",
+    "category": "content_license",
+    "severity": "medium",
+    "anchor": "You grant Zoom a perpetual, worldwide, non-exclusive, royalty-free, sublicensable",
+    "alt_anchors": [
+     "Zoom owns, and Zoom shall retain ownership of, all right, title, and interest in and to such Feedback"
+    ]
+   },
+   {
+    "id": "Z7",
+    "category": "data_collection",
+    "severity": "low",
+    "anchor": "Zoom owns all rights, title, and interest in and to Service Generated Data"
+   },
+   {
+    "id": "Z8",
+    "category": "liability_limitation",
+    "severity": "medium",
+    "anchor": "WILL NOT BE LIABLE FOR ANY:",
+    "alt_anchors": [
+     "SERVICES AND SOFTWARE ARE PROVIDED “AS IS”",
+     "EXCEEDING THE AMOUNT ACTUALLY PAID BY YOU",
+     "Under no circumstances will Zoom be liable in any way",
+     "Zoom hereby disclaims any liability for",
+     "must be filed within one (1) year",
+     "AS IT LIMITS OUR LIABILITY TO YOU",
+     "Zoom has no liability whatsoever for errors",
+     "SPECIAL, INCIDENTAL, INDIRECT, CONSEQUENTIAL",
+     "THESE EXCLUSION OF DAMAGES AND LIMITATIONS"
+    ]
+   },
+   {
+    "id": "Z9",
+    "category": "indemnification",
+    "severity": "medium",
+    "anchor": "you agree to indemnify, defend, and hold Zoom"
+   },
+   {
+    "id": "Z10",
+    "category": "dispute_rights",
+    "severity": "high",
+    "anchor": "will be resolved by binding arbitration, rather than in court",
+    "alt_anchors": [
+     "You agree to resolve certain disputes with Zoom through binding arbitration",
+     "not on a class, collective, representative, or mass action basis",
+     "waive any constitutional and statutory rights to sue in court",
+     "you and Zoom will arbitrate certain claims instead of going to court"
+    ]
+   },
+   {
+    "id": "Z11",
+    "category": "jurisdiction",
+    "severity": "low",
+    "anchor": "state courts located in and serving Santa Clara County, California"
+   }
+  ]
+ },
+ "held_out": [
+  "zoom"
+ ],
+ "held_out_note": "Zoom, kural sözlüğü (src/core/categories.js) yazıldıktan sonra etiketlendi; kurallar bu belgeye göre ayarlanmadı."
+}
